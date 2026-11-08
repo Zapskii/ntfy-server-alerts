@@ -1,0 +1,13 @@
+[Unit]
+Description=ntfy notifications for SSH auth log events
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/ntfy-ssh-authlog.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

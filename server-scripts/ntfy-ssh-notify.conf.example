@@ -1,0 +1,11 @@
+# ntfy SSH notification configuration
+# Copy this file to /etc/ntfy-ssh/ntfy-ssh.conf and set permissions to 600.
+
+NTFY_ENDPOINT=https://ntfy.example.com
+NTFY_TOPIC=ssh-alerts
+NTFY_ACCESS_TOKEN=ntfy_xxxxxxxxxxxxxxxx
+
+# Optional: override default priority (1=min, 5=max)
+# NTFY_LOGIN_PRIORITY=3
+# NTFY_LOGOUT_PRIORITY=2
+# NTFY_FAILED_PRIORITY=4

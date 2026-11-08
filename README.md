@@ -31,7 +31,7 @@ ntfy-server-alerts/
 │   └── README.md                       # Linux detailed install docs
 ├── ntfy-windows/
 │   ├── install-ntfy-logon-alerts.ps1   # Windows/Hyper-V installer
-│   └── hyperv-ntfy-login-alerts.md     # Windows detailed install docs
+│   └── README.md                       # Windows detailed install docs
 └── README.md                           # This file
 ```
 
@@ -71,7 +71,7 @@ C:\Users\Administrator\Downloads\install-ntfy-logon-alerts.ps1 `
   -NtfyAccessToken tk_xxxxxxxx
 ```
 
-See `ntfy-windows/hyperv-ntfy-login-alerts.md` for manual setup, Windows Admin Center notes, and RDP-specific extensions.
+See `ntfy-windows/README.md` for manual setup, Windows Admin Center notes, and RDP-specific extensions.
 
 ## Repository
 

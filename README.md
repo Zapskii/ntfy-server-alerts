@@ -19,8 +19,8 @@ Sends real-time ntfy notifications for:
 ## Project layout
 
 ```
-ntfy/
-├── server-scripts/
+ntfy-server-alerts/
+├── ntfy-linux/
 │   ├── install-ntfy-ssh-alerts.sh      # Linux reusable installer
 │   ├── ntfy-ssh-authlog.sh             # Auth-log / journalctl watcher
 │   ├── ntfy-ssh-authlog.service        # systemd unit
@@ -36,9 +36,9 @@ ntfy/
 ## Quick install: Linux
 
 ```bash
-scp server-scripts/install-ntfy-ssh-alerts.sh \
-   server-scripts/ntfy-ssh-authlog.sh \
-   server-scripts/ntfy-ssh-authlog.service \
+scp ntfy-linux/install-ntfy-ssh-alerts.sh \
+   ntfy-linux/ntfy-ssh-authlog.sh \
+   ntfy-linux/ntfy-ssh-authlog.service \
    user@new-server:/tmp/
 
 ssh user@new-server 'sudo bash /tmp/install-ntfy-ssh-alerts.sh'
@@ -55,7 +55,7 @@ ssh user@new-server '
 '
 ```
 
-See `server-scripts/README.md` for PAM hook, uninstall, manual install, and distro support details.
+See `ntfy-linux/README.md` for PAM hook, uninstall, manual install, and distro support details.
 
 ## Quick install: Windows Hyper-V
 

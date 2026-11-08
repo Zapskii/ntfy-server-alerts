@@ -23,9 +23,9 @@ The auth-log watcher is simpler to maintain and doesn't touch PAM. The PAM hook 
 Copy the installer and source files to the target server, then run it:
 
 ```bash
-scp server-scripts/install-ntfy-ssh-alerts.sh \
-   server-scripts/ntfy-ssh-authlog.sh \
-   server-scripts/ntfy-ssh-authlog.service \
+scp ntfy-linux/install-ntfy-ssh-alerts.sh \
+   ntfy-linux/ntfy-ssh-authlog.sh \
+   ntfy-linux/ntfy-ssh-authlog.service \
    user@example.com:/tmp/
 ssh user@example.com 'sudo bash /tmp/install-ntfy-ssh-alerts.sh'
 ```
@@ -85,9 +85,9 @@ Keep the file at `600` and owned by `root`.
 
    ```bash
    ssh user@example.com "sudo mkdir -p /etc/ntfy-ssh"
-   scp server-scripts/ntfy-ssh-notify.conf.example user@example.com:/tmp/ntfy-ssh.conf
-   scp server-scripts/ntfy-ssh-authlog.sh user@example.com:/tmp/ntfy-ssh-authlog.sh
-   scp server-scripts/ntfy-ssh-authlog.service user@example.com:/tmp/ntfy-ssh-authlog.service
+   scp ntfy-linux/ntfy-ssh-notify.conf.example user@example.com:/tmp/ntfy-ssh.conf
+   scp ntfy-linux/ntfy-ssh-authlog.sh user@example.com:/tmp/ntfy-ssh-authlog.sh
+   scp ntfy-linux/ntfy-ssh-authlog.service user@example.com:/tmp/ntfy-ssh-authlog.service
    ssh user@example.com '
      sudo mv /tmp/ntfy-ssh.conf /etc/ntfy-ssh/ntfy-ssh.conf
      sudo chmod 600 /etc/ntfy-ssh/ntfy-ssh.conf
@@ -115,8 +115,8 @@ Keep the file at `600` and owned by `root`.
 
    ```bash
    ssh user@example.com "sudo mkdir -p /etc/ntfy-ssh"
-   scp server-scripts/ntfy-ssh-notify.conf.example user@example.com:/tmp/ntfy-ssh.conf
-   scp server-scripts/ntfy-ssh-notify.sh user@example.com:/tmp/ntfy-ssh-notify.sh
+   scp ntfy-linux/ntfy-ssh-notify.conf.example user@example.com:/tmp/ntfy-ssh.conf
+   scp ntfy-linux/ntfy-ssh-notify.sh user@example.com:/tmp/ntfy-ssh-notify.sh
    ssh user@example.com '
      sudo mv /tmp/ntfy-ssh.conf /etc/ntfy-ssh/ntfy-ssh.conf
      sudo chmod 600 /etc/ntfy-ssh/ntfy-ssh.conf

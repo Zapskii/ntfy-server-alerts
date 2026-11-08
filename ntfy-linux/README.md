@@ -2,6 +2,8 @@
 
 Send real-time ntfy alerts when someone SSHs into a Linux server.
 
+You need an ntfy server: the hosted [ntfy.sh](https://ntfy.sh) service (free tier or paid plans) or a self-hosted [binwiederhier/ntfy](https://github.com/binwiederhier/ntfy) instance.
+
 Two approaches are provided:
 
 1. **Auth-log watcher** (`ntfy-ssh-authlog.sh` + systemd service) — recommended; tails `/var/log/auth.log` or `journalctl -u sshd`

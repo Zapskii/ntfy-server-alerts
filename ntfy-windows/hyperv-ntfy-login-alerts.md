@@ -2,6 +2,8 @@
 
 Configure a Hyper-V Server Core host to send an [ntfy](https://ntfy.sh) push notification whenever someone logs in, logs out, or fails to log in.
 
+You need an ntfy server: the hosted [ntfy.sh](https://ntfy.sh) service (free tier or paid plans) or a self-hosted [binwiederhier/ntfy](https://github.com/binwiederhier/ntfy) instance.
+
 **How it works:** Windows Event Viewer logs a security event on logon/logoff → Task Scheduler is triggered by that event → a PowerShell script runs and posts a message to your ntfy topic.
 
 ---

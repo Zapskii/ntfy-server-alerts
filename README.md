@@ -2,6 +2,8 @@
 
 Reusable ntfy alerting stack for server logon/logoff events on Linux and Windows.
 
+Alerts are sent to an [ntfy](https://ntfy.sh) server. You can use the hosted service at [ntfy.sh](https://ntfy.sh) (free tier or paid plans) or self-host your own using [binwiederhier/ntfy](https://github.com/binwiederhier/ntfy). Point the installers at whichever endpoint you use.
+
 ## Linux: SSH alerts
 
 Sends real-time ntfy notifications for:
